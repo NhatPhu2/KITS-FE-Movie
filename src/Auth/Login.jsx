@@ -162,9 +162,7 @@ const Login = () => {
                   LOGIN NOW
                 </button>
                 <Button
-                  href={
-                    "http://localhost:8080/oauth2/authorize/google?redirect_uri=http://localhost:3000/oauth2"
-                  }
+                  href={process.env.REACT_APP_LOGIN_GOOGLE_URL}
                 >
                   <IconGoogle />
                 </Button>

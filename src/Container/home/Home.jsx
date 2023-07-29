@@ -24,7 +24,7 @@ export const Home = () => {
       .then((res) => {
         setMovie(res.data.data);
       })
-      .catch((error) => {});
+      .catch((error) => {console.log(error)});
   }, []);
 
   const Container = styled.div`
